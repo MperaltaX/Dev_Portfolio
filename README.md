@@ -1,3 +1,3 @@
 # Dev_Portfolio
 Puedes ver una Preview aqui.
-[DevTalent.site](http://devtalent.site/)
+[DevTalent.site](http://devtalent.site/){:target="_blank"}
