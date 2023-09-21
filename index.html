@@ -2,10 +2,14 @@
 <html lang="es">
 
 <head>
+   
+
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/avatar.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Talent</title>
+    <link rel="icon" href="img/logoSimple.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
@@ -77,32 +81,34 @@
                 </div>
             </div>
             
-             <div class="photo-content">
+           <!--  <div class="photo-content">
                 <img src="img/foto.png" alt="Foto" class="responsive-image" style="margin-bottom: 1.1rem;"/>
+            </div> -->
+
+            <div class="image-container" style="margin-bottom: 10rem;">
+                <img style="height: auto;" alt="" src="https://avatars.githubusercontent.com/u/31133539?v=4" width="260" height="260" class="avatar avatar-user width-full border color-bg-default">
+                <div class="user-status-badge-wrapper">
+                    <div class="user-status-badge">
+                        <div class="user-status-emoji-container flex-shrink-0 d-flex flex-items-center flex-justify-center">
+                            <div>
+                                <g-emoji class="g-emoji" alias="dart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png">🎯</g-emoji>
+                            </div>
+                        </div>
+                        <div class="user-status-message-wrapper f6 color-fg-default no-wrap">
+                            <div>Enfoque</div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
-        </section>
+            
 
 
     </header>
 
     <div class="rectangle-header">
         <div class="slider-container">
-        <!--
-        <section class="customer-logos">
-            <div class="responsive-image"><img src="img/github.svg" width="1%" height="1%"></div>
-            <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
-            <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
-            <div class="slide"><img
-                    src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
-            <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg">
-            </div>
-            <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
-            </div>
-            <div class="slide"><img
-                    src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
 
-        </section>-->
         <div class="slider">
             <ul>
                 <li>
@@ -206,8 +212,17 @@
             <h3 class="text-white" style="margin-top: 3rem; margin-right: 7rem; text-align: left;">Grain Minder</h3>
             <p class="text-white" style="margin-top: 3rem; margin-right: 7rem; text-align: left;">Gestor de granos para productores agropecuarios.<br>
                 Uno de los pocos software 100% adaptado a la gestion de granos por parte del productor. <br>
-                -Springboot - Java - JavaScript - Bootstrap - Mysql</p>
-                <div style="display: flex; justify-content: flex-start; margin-right: 7rem;  margin-bottom: 3rem;">
+                <div style="text-align: left; display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap: 10px;">
+                <span class="springboot">Springboot</span> 
+                <span class="java">Java</span> 
+                <span class="javascript">Javascript</span> 
+                <span class="bootstrap">Bootstrap</span> 
+                <span class="mysql">Mysql</span>
+                </div>
+                <div style="display: flex; justify-content: flex-start; margin-right: 7rem;  margin-bottom: 3rem; margin-top: 3rem;">
                     <a href="proyects/proyectOne.html">
             <button type="button" class="button-60">VER MAS</button>
         </a>
@@ -232,9 +247,19 @@
             <div class="circle"></div>
             <h3 class="text-white" style="margin-top: 3rem; margin-left: 7rem; text-align: left;">Yendo</h3>
             <p class="text-white" style="margin-top: 3rem; margin-left: 7rem; text-align: left;">App de Delivery movil y web, toma lo mejor de aplicaciones como PedidosYa, <br>
-                y lo adapta a las necesidades de cualquier ciudad mediana.<br>
-                -Flutter - Node Js - Mysql - Firebase</p>
-                <div style="display: flex; justify-content: flex-start; margin-left: 7rem;">
+                y lo adapta a las necesidades de cualquier ciudad mediana.<br></p>
+                <div style="text-align: left; 
+                margin-left: 7rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap: 10px;">
+                <span class="flutter">FLutter</span> 
+                <span class="nodejs">Node JS</span> 
+                <span class="mysql">Mysql</span> 
+                <span class="firebase">Firebase</span>
+                </div>
+                <div style="display: flex; justify-content: flex-start; margin-left: 7rem; margin-top: 3rem;">
                     <a href="proyects/proyectTwo.html">
                 <button type="button" class="button-60">VER MAS</button>
             </a>
@@ -252,9 +277,14 @@
             <h3 class="text-white" style="margin-top: 3rem; margin-right: 7rem; text-align: left;">Bots de Mercado Bursatil y Cripto</h3>
             <p class="text-white" style="margin-top: 3rem; margin-right: 7rem; text-align: left;">Automatizacion de estrategias para operaciones de Mercado.<br>
                 Mediante calculos matematicos, indicadores de mercado y precios en tiempo real,<br>
-                lleva adelante una estrategia de compra-venta sin estar personalmente pendiente del mercado.<br>
-                -Python</p>
-                <div style="display: flex; justify-content: flex-start; margin-right: 7rem;  margin-bottom: 3rem;">
+                lleva adelante una estrategia de compra-venta sin estar personalmente pendiente del mercado.<br></p>
+                <div style="text-align: left; display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap: 10px;">
+                <span class="python">Python</span> 
+                </div>
+                <div style="display: flex; justify-content: flex-start; margin-right: 7rem;  margin-bottom: 3rem; margin-top: 3rem;">
                     <a href="proyects/proyectThree.html">
             <button type="button" class="button-60">VER MAS</button>
         </a>
@@ -279,9 +309,17 @@
             <div class="square" style="margin-left: 50%;"></div>
             <h3 class="text-white" style="margin-top: 3rem; margin-left: 7rem; text-align: left;">Bots de Whatsapp</h3>
             <p class="text-white" style="margin-top: 3rem; margin-left: 7rem; text-align: left;">Una app no oficial de Whatsapp que permite las respuestas guiadas de bots y campañas masivas,<br>
-                como lo realizan las grandes empresas pero al costo de un cafe.<br>
-                -Python - Node JS</p>
-                <div style="display: flex; justify-content: flex-start; margin-left: 7rem;">
+                como lo realizan las grandes empresas pero al costo de un café.<br></p>
+                <div style="text-align: left; 
+                margin-left: 7rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap: 10px;">
+                <span class="python">Python</span> 
+                <span class="nodejs">Node JS</span> 
+                </div>
+                <div style="display: flex; justify-content: flex-start; margin-left: 7rem; margin-top: 3rem;">
                     <a href="proyects/proyectFour.html">
                 <button type="button" class="button-60">VER MAS</button>
             </a>
@@ -299,9 +337,14 @@
             <h3 class="text-white" style="margin-top: 3rem; margin-right: 7rem; text-align: left;">Interprete de Dep's</h3>
             <p class="text-white" style="margin-top: 3rem; margin-right: 7rem; text-align: left;">Aplicacion no oficial para la Asociacion Argentina de Angus.<br>
                 ayuda a los productores de ganado a interpretar las caracteristicas de produccion de sus animales, <br>
-                estos datos son proveidos por la Asociacion y comunmente conocidos como Dep's.<br>
-                -Flutter</p>
-                <div style="display: flex; justify-content: flex-start; margin-right: 7rem;  margin-bottom: 3rem;">
+                estos datos son proveidos por la Asociacion y comunmente conocidos como Dep's.<br></p>
+                <div style="text-align: left; display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap: 10px;">
+                <span class="flutter">Flutter</span> 
+                </div>
+                <div style="display: flex; justify-content: flex-start; margin-right: 7rem;  margin-bottom: 3rem; margin-top: 3rem;">
                     <a href="proyects/proyectFive.html"> 
             <button type="button" class="button-60">VER MAS</button>
                     </a>
@@ -325,9 +368,19 @@
             <div class="square" style="margin-left: 50%;"></div>
             <h3 class="text-white" style="margin-top: 3rem; margin-left: 7rem; text-align: left;">Libra</h3>
             <p class="text-white" style="margin-top: 3rem; margin-left: 7rem; text-align: left;">Creado para una balanza de camiones autorizada por el INTI.<br>
-                Gestiona una empresa dedicada al pesaje de camiones en una consurrida ruta nacional.<br>
-                -C# - Mysql - Java - Firebase</p>
-                <div style="display: flex; justify-content: flex-start; margin-left: 7rem;">
+                Gestiona una empresa dedicada al pesaje de camiones en una consurrida ruta nacional.<br></p>
+                <div style="text-align: left; 
+                margin-left: 7rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap: 10px;">
+                <span class="csharp">C#</span> 
+                <span class="mysql">Mysql</span> 
+                <span class="java">Java</span> 
+                <span class="firebase">Firebase</span>
+                </div>
+                <div style="display: flex; justify-content: flex-start; margin-left: 7rem; margin-top: 3rem;">
                     <a href="proyects/proyectSix.html">
                 <button type="button" class="button-60">VER MAS</button>
                     </a>
@@ -344,9 +397,16 @@
             <p class="text-white" style="margin-top: 3rem; margin-right: 7rem; text-align: left;">Api para la cotizacion del Dolar.<br>
                 Obtiene todos los tipos de cambios oficiales del Banco Nacion Argentina 
                 para luego servirlos <br>
-                en un Api Rest.<br>
-                -Node Js - Mongo DB</p>
-                <div style="display: flex; justify-content: flex-start; margin-right: 7rem;  margin-bottom: 3rem;">
+                en un Api Rest.<br></p>
+                <div style="text-align: left; 
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap: 10px;">
+                <span class="javascript">Node JS</span> 
+                <span class="mongodb">Mongo DB</span>
+                </div>
+                <div style="display: flex; justify-content: flex-start; margin-right: 7rem;  margin-bottom: 3rem;  margin-top: 3rem">
                     <a href="proyects/proyectSeven.html"> 
             <button type="button" class="button-60">VER MAS</button>
                     </a>
@@ -358,6 +418,33 @@
         </div>
     </div>
 
+<div class="container" style="margin-top: 10rem; margin-bottom: 10rem; display: flex; flex-wrap: wrap;">
+        
+        <div class="left-content" style="flex: 1;" data-aos="fade-right">
+            <img src="img/machine-learning/0.png" alt="Imagen" class="responsive-image">
+        </div>
+
+    <div class="right-content" style="margin-top: 5rem; flex: 1;" data-aos="fade-left">
+        <div class="square" style="margin-left: 50%;"></div>
+        <h3 class="text-white" style="margin-top: 3rem; margin-left: 7rem; text-align: left;">Machine Learning Aplicado</h3>
+        <p class="text-white" style="margin-top: 3rem; margin-left: 7rem; text-align: left;">Predice si el peso al nacer de un ternero será bajo o alto.<br>
+            Acompañado de la mirada de un genetista, puede lograr un incremento significativo en la producción del rodeo.<br></p>
+            <div style="text-align: left; 
+            margin-left: 7rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 10px;">
+            <span class="python">Python</span>
+            </div>
+            <div style="display: flex; justify-content: flex-start; margin-left: 7rem; margin-top: 3rem;">
+                <a href="proyects/proyectEight.html">
+            <button type="button" class="button-60">VER MAS</button>
+                </a>
+        </div>
+    </div>
+
+</div>
     
     <div class="rectangular-area footer-bg" id="contacto">
         <div class="line-top-left"></div>

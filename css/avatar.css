@@ -1,0 +1,51 @@
+.avatar-user {
+    border-radius: 50% !important;
+  }
+  .avatar {
+    background-color: var(--color-avatar-bg);
+    border-radius: var(--borderRadius-medium, 6px);
+    box-shadow: 0 0 0 1px var(--color-avatar-border);
+    display: inline-block;
+    flex-shrink: 0;
+    line-height: 1;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.user-status-badge-wrapper {
+    position: absolute;
+    bottom: 5rem;
+    right: -3rem;
+    background-color: #fff;
+    padding: 0.6rem;
+    border-radius: 3rem;
+}
+
+.user-status-badge {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.user-status-emoji-container {
+    flex-shrink: 0;
+    margin-right: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-status-message-wrapper {
+    font-size: 12px;
+    color: #000000;
+    white-space: nowrap;
+}
+
+
+
+

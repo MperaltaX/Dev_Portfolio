@@ -350,6 +350,11 @@ h2 {
   .customer-logos {
     margin-left: -20px; /* Estilo para pantallas hasta 992px */
   }
+  
+  #thanks {
+    font-size: 24px;
+    margin: 10% 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -616,6 +621,7 @@ h2 {
 
 
 @media screen and (max-width: 768px) {
+  
 
   .carrousel li img {
     margin-left: -6rem;
@@ -776,7 +782,7 @@ h2 {
   list-style: none;
 }
 .slider img {
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
   width: 10rem;
   max-width: fit-content !important;
   max-width: -moz-fit-content; /* Agrega esta línea para compatibilidad con Firefox */
@@ -791,13 +797,13 @@ h2 {
 
 
 /*------Animacion maquina de escribir-------*/ 
-.container_span{
-  white-space: nowrap;
+.container_span {
+  white-space: pre-line; /* Cambiamos white-space a pre-line para permitir saltos de línea */
   border-right: 0.4rem solid;
-  width: 16ch;
   animation: typing 2s steps(16), blink .5s infinite step-end alternate;
   overflow: hidden;
 }
+
 
 @keyframes typing{
   from{ width: 0}
@@ -875,7 +881,6 @@ h2 {
 /*Carousel*/
 .carrousel {
   overflow: hidden;
-  position: relative;
   text-align: center;
   padding: 1em 0;
   max-width: 108rem;
@@ -894,12 +899,14 @@ h2 {
   -moz-transition: transform .5s;
   -o-transition: transform .5s;
   transition: transform .5s;
+  text-align: center; /* Centra los elementos horizontalmente */
 }
 
 .carrousel .items li {
-  width: 25%;
+  width: 25%; /* Cambia el ancho para que quepan 4 elementos en una fila */
   position: relative;
   float: left;
+  text-align: center; /* Centra el contenido dentro de cada elemento */
 }
 
 .carrousel li div {
@@ -1019,4 +1026,88 @@ TODO: make it easier with SCSS
   color: #fff;
   outline: 0;
   text-decoration: none;
+}
+
+/*------------Circle Avatar-----------------*/
+/*.avatar-user {
+  border-radius: 50% !important;
+}
+.avatar {
+  background-color: var(--color-avatar-bg);
+  border-radius: var(--borderRadius-medium, 6px);
+  box-shadow: 0 0 0 1px var(--color-avatar-border);
+  display: inline-block;
+  flex-shrink: 0;
+  line-height: 1;
+  overflow: hidden;
+  vertical-align: middle;
+}*/
+
+/* Estilos para hacer que los iframes sean responsivos */
+.video-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* Proporción 16:9 para iframes */
+  max-width: 100%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mongodb,
+.nodejs,
+.springboot {
+  background-color: #82cf43; /* Color de fondo */
+  color: #fff; /* Color de texto */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 10px; /* Radio de los bordes */
+}
+
+.java {
+  background-color: #d55c2b; /* Color de fondo */
+  color: #fff; /* Color de texto */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 10px; /* Radio de los bordes */
+}
+
+.firebase,
+.javascript {
+  background-color: #ffc300; /* Color de fondo */
+  color: #fff; /* Color de texto */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 10px; /* Radio de los bordes */
+}
+
+.csharp,
+.bootstrap {
+  background-color: #703d6f; /* Color de fondo */
+  color: #fff; /* Color de texto */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 10px; /* Radio de los bordes */
+}
+
+.mysql {
+  background-color: #a1a1a1; /* Color de fondo */
+  color: #fff; /* Color de texto */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 10px; /* Radio de los bordes */
+}
+
+.flutter {
+  background-color: #9b69ff; /* Color de fondo */
+  color: #fff; /* Color de texto */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 10px; /* Radio de los bordes */
+}
+
+.python {
+  background-color: #4a2cfb; /* Color de fondo */
+  color: #fff; /* Color de texto */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 10px; /* Radio de los bordes */
 }
