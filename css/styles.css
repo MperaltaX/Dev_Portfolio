@@ -10,8 +10,11 @@
   
 
 .body {
-    background-color: var(--color-primary); /* Cambia el color de fondo del lienzo */
+    /*background-color: var(--color-primary);*/ /* Cambia el color de fondo del lienzo */
     font-size: 16px;
+    background: radial-gradient(circle, transparent 20%, #202529 20%, #202529 80%, transparent 80%, transparent) 0% 0% / 172px 172px, radial-gradient(circle, transparent 20%, #202529 20%, #202529 80%, transparent 80%, transparent) 86px 86px / 172px 172px, linear-gradient(#262B30 2px, transparent 2px) 0px -1px / 86px 86px, linear-gradient(90deg, #262B30 2px, #202529 2px) -1px 0px / 86px 86px #202529;
+    background-size: 172px 172px, 172px 172px, 86px 86px, 86px 86px;
+    background-color: #202529;
 }
 
 .text-white {
@@ -104,7 +107,7 @@
 }
 
 .header-bg{
-    background-image: url(../img/headerbg4.svg);
+    background-image: url(../img/headerbg6111.svg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -1rem;
@@ -336,9 +339,19 @@ h2 {
 .responsive-image {
   max-width: 100%;
   height: auto;
+  box-shadow: 0 4px 12px #59696d; /* Cambia los valores según necesites */
+
 }
 
+.border_radius_right{
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
 
+.border_radius_left{
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
 
 @media (max-width: 1200px) {
   .customer-logos {
@@ -359,8 +372,17 @@ h2 {
 
 @media (max-width: 768px) {
 
+  .circle, .square, .x {
+    display: none;
+}
 
-
+.header-bg {
+  background-image: url(../img/headerbg6111.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -1rem;
+}
 
   .customer-logos {
     margin-left: -30px; /* Estilo para pantallas hasta 768px */
@@ -1001,22 +1023,20 @@ TODO: make it easier with SCSS
 }
 
 /*-------------Flecha para hacer la pagina hacia arriba--------------*/
+
 .c-go-top {
   background: none repeat scroll 0 0 padding-box #e86b0c;
-  bottom: 2rem;
+  bottom: 20px;
   border: 1px solid #e86b0c;
   border-radius: 15px;
   color: #eee;
   display: none;
   font-size: 12px;
   opacity: 0.7;
-  padding: 0.2rem;
-  padding-top: 0.4rem;
   position: fixed;
-  right: 5%;
   text-decoration: none;
   z-index: 999;
-  right: 18rem;
+  right: 20px;
 }
 
 .c-go-top:hover,

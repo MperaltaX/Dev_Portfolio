@@ -2,10 +2,12 @@
 <html lang="es">
 
 <head>
+    <link rel="stylesheet" type="text/css" href="../css/avatar.css">
+    <link rel="stylesheet" type="text/css" href="../css/modal_img.css">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Talent: Grain Minder</title>
+    <title>Code Talent</title>
     <link rel="icon" href="../img/logoSimple.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,13 +18,13 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     
 
     <!--animation-->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="js/maquinaEscribir.js"></script>
+
 
 
 
@@ -31,15 +33,15 @@
 
 <body class="body font">
     <header class="text-white header header-center header-bg">
-        <section class="header-content"  style="margin-bottom: 5rem;">
+        <section class="header-content"  style="margin-top:150px">
             <div class="text-content">
-                <h1>Mattias Peralta</h1>
-                <h2>Developer</h2>
-                <p style="text-align: left; margin: 1rem;">Analista de Sistemas, Admin. contable y Profesor de informática.<br>
-                    Mi objetivo es ofrecer soluciones de manera eficiente mediante el desarrollo Back-End.<br>
-                    Tengo como prioridad automatizar tareas repetitivas y mejorar los procesos existentes, <br>
-                    con el fin de aumentar la eficiencia y productividad en diferentes áreas.</p>
-                    <a href="#" onclick="scrollToContact(); return false;">
+                <h1 style="font-weight: bold;">MATTIAS PERALTA</h1>
+                <h3 style="font-weight: bold;">Developer Fullstack</h3>
+                <h3 style="font-weight: bold;">(con enfoque BACKEND)</h3>
+
+                
+
+                    <a href="../index.html#contacto">
                     <button type="button" class="button-60 button-60-aling-left">Contacto</button>
                      </a>
                      
@@ -66,9 +68,27 @@
                 </div>
             </div>
             
-             
+           <!--  <div class="photo-content">
+                <img src="img/foto.png" alt="Foto" class="responsive-image" style="margin-bottom: 1.1rem;"/>
+            </div> -->
+
+            <div class="image-container" style="margin-bottom: 10rem;">
+                <img style="height: auto;" alt="" src="https://avatars.githubusercontent.com/u/31133539?v=4" width="260" height="260" class="avatar avatar-user width-full border color-bg-default">
+                <div class="user-status-badge-wrapper">
+                    <div class="user-status-badge">
+                        <div class="user-status-emoji-container flex-shrink-0 d-flex flex-items-center flex-justify-center">
+                            <div>
+                                <g-emoji class="g-emoji" alias="dart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png">🎯</g-emoji>
+                            </div>
+                        </div>
+                        <div class="user-status-message-wrapper f6 color-fg-default no-wrap">
+                            <div>Enfoque Backend</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-        </section>
+            
 
 
     </header>
@@ -137,8 +157,8 @@
                 con una persona real. <br>
                 <br>
                 En cuanto a la campaña de envíos de mensajes, tiene como limitante las condiciones<br>
-                diarias de whatsapp. Dependiendo del perfil del negocio, son entre 250 a 1000 mensajes<br>
-                cada 24 hs. <br>
+                diarias de whatsapp. Al no nececitar verificación de Meta, son entre 250 a 1000 mensajes<br>
+                cada 24 hs.<br>
                 <br>
                 Ambas funcionalidades combinadas, son de gran utilidad para los comercios. <br>
                 Imagina tener tus productos cargados en la base de datos, el cliente consulta el precio<br>
@@ -151,73 +171,14 @@
                 -Desplegado en un servidor con CentOs.<br>
                 -Node Js para respuestas y converzaciones de los chats.<br>
                 -Python para el envío masivo de mensajes.<br>
-                -No cuenta con interfaz visual. El programador configura las acciones.<br>
+                -No necesita verificación de META.<br>
                <br>
 
-                <a href="../index.html">
-                <button type="button" class="button-60" style="margin-top: 5rem;">VOLVER</button>
-            </a>
+               <button type="button" class="button-60" style="margin-top: 5rem;" onclick="goBack()">VOLVER</button>
         
         </div>
 
     </div>
-
-    
-    <div class="rectangular-area footer-bg" id="contacto">
-        <div class="line-top-left"></div>
-        <div class="line-top-right"></div>
-        <div class="line-bottom-left"></div>
-        <div class="line-bottom-right"></div>
-        <div class="text-center-rectangulo text-white">
-            <p >CONTACTO</p>
-        </div>
-
-            
-        <div class="icon-svg icon-bot-center-rectangulo">
-            <a href="https://wa.me/542923500352?text=Hola%20Mattias!" target="_blank">
-                <svg width="4rem" height="4rem">
-                    <image class="icon-header" xlink:href="../img/whatsapp.svg" width="100%" height="100%" />
-                </svg>
-            </a>
-            </div>
-            <div class="icon-svg icon-bot-center-rectangulo2">
-                <a href="https://linkedin.com/in/mattiasperalta" target="_blank">
-                <svg width="4rem" height="4rem">
-                    <image class="icon-header" xlink:href="../img/linkedin.svg" width="100%" height="100%" />
-                </svg>
-                </a>
-        </div>
-            
-
-
-
-        <div class="rectangle header-bg">
-            <div class="icon-svg-trhee">
-                <svg width="4rem" height="4rem" >
-                    <image class="icon-header" xlink:href="../img/mail.svg" width="100%" height="100%" />
-                </svg>
-            </div>
-          <div class="text-white">MATTIASPERALTA1995@GMAIL.COM</div>
-        </div>
-
-        <div class="rectangle-two header-bg">
-            <div class="icon-svg-two">
-                <svg width="4rem" height="4rem">
-                    <image class="icon-header" xlink:href="../img/callme.svg" width="100%" height="100%" />
-                </svg>
-            </div>
-            <div class="text-white">2923-500352</div>
-        </div>
-
-        <div class="center-rectangle header-bg"> <!-- Agregamos una clase adicional -->
-            <div class="icon-svg" >
-                <svg width="4rem" height="4rem">
-                    <image class="icon-header" xlink:href="../img/maps.svg" width="100%" height="100%" />
-                </svg>
-            </div>
-            <div class="text-white">Buenos Aires, ARGENTINA</div>
-        </div>
-      </div>
 
 
       <div>
@@ -226,12 +187,13 @@
         
     </div>
 
-    <script>
-        function scrollToContact() {
-  const contactoElement = document.getElementById('contacto');
-  contactoElement.scrollIntoView({ behavior: 'smooth' });
-}
-      </script>
+        <!-- El Modal -->
+        <div id="myModal" class="modal" onclick="closeModal()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="img01">
+        </div>
+
+    <script src="../js/proyects.js" type="text/javascript"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
